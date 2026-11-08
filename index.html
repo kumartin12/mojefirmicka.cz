@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firmička – sklad, faktury a pokladna v jednom programu</title>
+<meta name="description" content="Firmička je program pro živnostníky a malé firmy: faktury s QR platbou, sklad, pokladna, servisní zakázky a podklady pro účetní. Běží u vás v počítači. Testovací verze ke stažení zdarma.">
+<meta property="og:title" content="Firmička – sklad, faktury a pokladna v jednom programu">
+<meta property="og:description" content="Program pro živnostníky a malé firmy. Běží u vás v počítači, bez cloudu. Testovací verze ke stažení.">
+<meta property="og:image" content="https://mojefirmicka.cz/img/prehled.webp">
+<meta property="og:type" content="website">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.svg" alt="">Firmička</a>
+    <nav>
+      <a href="#prohlidka">Prohlídka</a>
+      <a href="#co-umi">Co umí</a>
+      <a href="#ucetni">Pro účetní</a>
+      <a href="#otazky">Otázky</a>
+      <a href="stahnout.html">Ke stažení</a>
+    </nav>
+    <button class="theme" type="button" aria-label="Přepnout světlý / tmavý vzhled" title="Světlý / tmavý vzhled">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a class="btn primary small" href="stahnout.html">Stáhnout</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Pro živnostníky a malé firmy · <span class="beta">testovací verze</span></p>
+      <h1>Sklad, faktury a&nbsp;pokladna. <em>V&nbsp;jednom programu.</em></h1>
+      <p class="lead">Firmička běží u vás v počítači. Žádný cloud, žádná data u cizí firmy. Vystavíte fakturu s QR platbou, prodáte přes pokladnu, odepíšete zboží ze skladu a účetní dostane podklady na jedno kliknutí.</p>
+      <div class="cta">
+        <a class="btn primary" href="stahnout.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></svg>
+          Stáhnout testovací verzi
+        </a>
+        <a class="btn ghost" href="#prohlidka">Prohlédnout program</a>
+      </div>
+      <ul class="facts">
+        <li>30 dní plně funkční</li>
+        <li>Bez registrace</li>
+        <li>Windows, Mac i Linux</li>
+      </ul>
+    </div>
+    <div>
+      <div class="win">
+        <div class="bar"><i></i><i></i><i></i><span>Firmička · Přehled</span></div>
+        <img class="shot-light" src="img/prehled.webp" width="1360" height="850" alt="Přehled ve Firmičce: neuhrazené faktury, příjmy, stav pokladny a banky, kalendář, faktury po splatnosti a docházející zboží">
+        <img class="shot-dark" src="img/prehled-dark.webp" width="1360" height="850" alt="Přehled ve Firmičce v tmavém režimu" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="prohlidka">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Prohlídka</p>
+      <h2>Podívejte se, jak to vypadá</h2>
+      <p>Skutečné obrazovky z verze 1.10.7, ukázková firma Kávoservis Novák. Kliknutím obrázek zvětšíte.</p>
+    </div>
+    <div class="tour">
+      <div class="tabs" role="tablist" aria-label="Části programu">
+        <button class="tab" role="tab" aria-selected="true" data-shot="faktura" data-cap="Faktura s QR platbou, IBAN a rozpisem DPH. Stáhnete ji jako PDF, pošlete e-mailem nebo z ní jedním klikem uděláte dobropis."><b>Faktury</b><span>QR platba, PDF, e-mail, dobropisy</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="faktury" data-cap="Seznam faktur se stavem úhrady. Po splatnosti je vidět hned a upomínky odejdou ve třech stupních."><b>Přehled faktur</b><span>Kdo zaplatil a kdo ne</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="pokladna" data-cap="Pokladna: pípnete čárový kód nebo vyberete zboží, Firmička spočítá DPH a kolik vrátit. Účtenku vytiskne na účtenkové tiskárně."><b>Pokladna</b><span>Prodej přes pult se čtečkou</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="uctenka-qr" data-cap="Platba QR kódem: zákazník ho naskenuje v bankovní aplikaci. Po načtení výpisu se platba k účtence spáruje sama."><b>QR platba</b><span>Zákazník zaplatí telefonem</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="zakazky" data-cap="Servisní zakázky se stavy Nová, Pracuje se, Čeká na díl, Čeká na zákazníka a Hotová. U každé vidíte poslední záznam z historie."><b>Zakázky</b><span>Servis od příjmu po výdej</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="zakazka" data-cap="Detail zakázky: změna stavu, záznam o kontaktu se zákazníkem, materiál a práce. Zakázkový list A5 vytisknete i s podpisem."><b>Detail zakázky</b><span>Historie a zakázkový list</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="sklad" data-cap="Sklad se stavem, minimem, nákupní cenou a hodnotou zásob. Co dochází, je zvýrazněné."><b>Sklad</b><span>Zásoby, minima, inventura</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="kalendar" data-cap="Společný kalendář s dovolenými, schůzkami a termíny. Státní svátky se doplní samy."><b>Kalendář</b><span>Dovolené, termíny, poznámky</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="export" data-cap="Export pro účetní: vyberete měsíc a stáhnete soubor pro Pohodu, ISDOC nebo tabulku do Excelu."><b>Pro účetní</b><span>Pohoda, ISDOC, Excel</span></button>
+      </div>
+      <div>
+        <div class="win">
+          <div class="bar"><i></i><i></i><i></i><span id="tour-url">Firmička · Faktury</span></div>
+          <img id="tour-img" class="zoom" src="img/faktura.webp" width="1360" height="850" alt="Faktura s QR platbou ve Firmičce">
+        </div>
+        <p class="cap" id="tour-cap" aria-live="polite">Faktura s QR platbou, IBAN a rozpisem DPH. Stáhnete ji jako PDF, pošlete e-mailem nebo z ní jedním klikem uděláte dobropis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="co-umi">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Co umí</p>
+      <h2>Všechno, co malá firma řeší každý den</h2>
+      <p>Každý uživatel vidí jen ty části, které potřebuje. Kdo jen fakturuje, sklad vůbec neuvidí.</p>
+    </div>
+    <div class="mods">
+      <article class="mod">
+        <span class="tag">Doklady</span>
+        <h3>Faktury</h3>
+        <p>Vydané i přijaté faktury, plátce i neplátce DPH.</p>
+        <ul><li>QR platba a PDF ke stažení</li><li>Zálohy, dobropisy, daňové doklady k platbě</li><li>Odeslání e-mailem, upomínky ve 3 stupních</li></ul>
+      </article>
+      <article class="mod">
+        <span class="tag">Zboží</span>
+        <h3>Sklad</h3>
+        <p>Přehled, co máte, kde to je a kolik to stojí.</p>
+        <ul><li>Více skladů a převodky mezi nimi</li><li>Čtečka čárových kódů a inventura</li><li>Hlídání minimálního stavu</li></ul>
+      </article>
+      <article class="mod">
+        <span class="tag">Prodejna</span>
+        <h3>Pokladna</h3>
+        <p>Prodej přes pult s tiskem účtenky.</p>
+        <ul><li>Hotově, kartou nebo QR kódem na displeji</li><li>Účtenková tiskárna 58 i 80 mm</li><li>Denní uzávěrka</li></ul>
+      </article>
+      <article class="mod">
+        <span class="tag">Servis</span>
+        <h3>Zakázky</h3>
+        <p>Od přijetí opravy po vyzvednutí.</p>
+        <ul><li>Zakázkový list A5 s podpisem zákazníka</li><li>Stavy a historie: čeká na díl, hotová…</li><li>E-mail zákazníkovi, že je hotovo</li></ul>
+      </article>
+      <article class="mod">
+        <span class="tag">Peníze</span>
+        <h3>Banka a deník</h3>
+        <p>Platby se spárují samy podle variabilního symbolu.</p>
+        <ul><li>Import výpisu (GPC, camt.053, CSV)</li><li>Peněžní deník příjmů a výdajů</li><li>Nabídky, které se jedním klikem stanou zakázkou</li></ul>
+      </article>
+      <article class="mod">
+        <span class="tag">Tým</span>
+        <h3>Uživatelé a kalendář</h3>
+        <p>Každý vidí jen to, co potřebuje.</p>
+        <ul><li>Role majitel, účetní, skladník, prodavač</li><li>Práce z více počítačů v místní síti</li><li>Společný kalendář, dovolené a poznámky</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="ucetni">
+  <div class="wrap split">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">Pro účetní</p>
+        <h2>Podklady, které účetní umí načíst</h2>
+        <p>Na konci měsíce vyberete období a stáhnete soubor. Žádné přepisování faktur z papíru.</p>
+      </div>
+      <div class="formats" style="margin-top:32px">
+        <div class="fmt"><code>POHODA XML</code><span>Vydané a přijaté faktury, zálohy a dobropisy rovnou do Pohody.</span></div>
+        <div class="fmt"><code>ISDOC 6.0.2</code><span>Český standard elektronické faktury. Načte ho většina účetních programů.</span></div>
+        <div class="fmt"><code>DPHDP3 · DPHKH1</code><span>Přiznání k DPH a kontrolní hlášení jako XML pro portál finanční správy.</span></div>
+        <div class="fmt"><code>CSV</code><span>Tabulky pro Excel: vydané a přijaté faktury, peněžní deník.</span></div>
+      </div>
+    </div>
+    <div class="win">
+      <div class="bar"><i></i><i></i><i></i><span>Firmička · Přiznání k DPH</span></div>
+      <img class="shot-light zoom" src="img/dph.webp" width="1360" height="850" alt="Podklady k DPH ve Firmičce" loading="lazy">
+      <img class="shot-dark zoom" src="img/dph-dark.webp" width="1360" height="850" alt="Podklady k DPH ve Firmičce v tmavém režimu" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="sec-head">
+      <p class="eyebrow">Na telefonu i tabletu</p>
+      <h2>Z mobilu se podíváte, co je potřeba</h2>
+      <p>Firmička se otevírá v prohlížeči, takže ji z telefonu nebo tabletu ve firemní síti otevřete taky. Stačí zapnout práci v síti a přihlásit se. Nic se neinstaluje.</p>
+      <p>Data přitom zůstávají na jednom počítači ve firmě. Denní zálohy dělá program sám.</p>
+    </div>
+    <div class="phones">
+      <div class="phone"><img src="img/mob-prehled.webp" width="390" height="844" alt="Přehled Firmičky na telefonu" loading="lazy"></div>
+      <div class="phone"><img src="img/mob-pokladna.webp" width="390" height="844" alt="Pokladna Firmičky na telefonu" loading="lazy"></div>
+      <div class="phone"><img src="img/mob-zakazky.webp" width="390" height="844" alt="Zakázky ve Firmičce na telefonu" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="jak">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Jak vyzkoušet</p>
+      <h2>Testovací verze je plná verze na 30 dní</h2>
+      <p>Nic není ořezané. Pracujte s vlastními daty, ať víte, jestli vám Firmička sedne.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Stáhněte a nainstalujte</h3><p>Instalace nepotřebuje práva správce a trvá pár vteřin. Na ploše se objeví ikona s domečkem.</p></li>
+      <li><h3>Vyplňte firmu</h3><p>Zadejte IČO a údaje se doplní z registru ARES. Pak první zboží a první faktura.</p></li>
+      <li><h3>Rozhodněte se</h3><p>Po 30 dnech zadáte licenční klíč, nebo program zůstane jen pro čtení. Vaše data se nikdy nezamknou.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec dl" id="stahnout">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Testovací verze 1.10.7 · 5. 11. 2026</p>
+      <h2>Stáhnout Firmičku</h2>
+      <p>Když si nejste jistí, berte instalátor pro Windows. Návod k instalaci a přehled novinek najdete na <a href="stahnout.html" style="color:#fff">stránce ke stažení</a>.</p>
+    </div>
+    <div class="files">
+      <div class="file main">
+        <span class="rec">Doporučeno</span>
+        <h3>Windows instalátor</h3>
+        <span class="meta">Firmicka-Setup-1.10.7.exe · 12,8 MB</span>
+        <p>Windows 10 a 11. Vytvoří zástupce na ploše a v nabídce Start a sám dělá denní zálohy.</p>
+        <a class="btn primary" href="soubory/Firmicka-Setup-1.10.7.exe" download>Stáhnout .exe</a>
+      </div>
+      <div class="file">
+        <h3>Windows bez instalace</h3>
+        <span class="meta">Firmicka-1.10.7-windows-portable.zip · 15,9 MB</span>
+        <p>Rozbalíte třeba na flashku a spustíte. Hodí se na počítače, kam nejde nic instalovat.</p>
+        <a class="btn ghost" href="soubory/Firmicka-1.10.7-windows-portable.zip" download>Stáhnout .zip</a>
+      </div>
+      <div class="file">
+        <h3>Mac a Linux</h3>
+        <span class="meta">Firmicka-1.10.7-linux-mac.zip · 0,9 MB</span>
+        <p>Potřebuje Python 3.10 nebo novější. Postup najdete v návodu na stránce ke stažení.</p>
+        <a class="btn ghost" href="soubory/Firmicka-1.10.7-linux-mac.zip" download>Stáhnout .zip</a>
+      </div>
+    </div>
+    <p class="note">Program zatím není digitálně podepsaný, proto Windows při prvním spuštění může ukázat modré okno „Systém Windows ochránil počítač“. Klikněte na „Další informace“ a pak na „Přesto spustit“.</p>
+  </div>
+</section>
+
+<section class="sec" id="otazky">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Otázky</p>
+      <h2>Na co se lidé ptají</h2>
+    </div>
+    <div class="faq">
+      <div>
+        <details open><summary>Potřebuju internet?</summary><p>Ne. Firmička běží ve vašem počítači a otevírá se v prohlížeči. Internet je potřeba jen pro ARES, odesílání e-mailů a stažení nové verze.</p></details>
+        <details><summary>Kde jsou moje data?</summary><p>V jednom souboru ve vašem počítači. Program každý den udělá zálohu a uchová ji 30 dní. Zálohu můžete uložit i zašifrovanou na flashku.</p></details>
+        <details><summary>Co znamená „testovací verze“?</summary><p>Program je hotový a používá se, ale ještě ho ladíme podle zpětné vazby. Nové verze stáhnete tady na webu a nainstalujete přes starou, data zůstanou.</p></details>
+        <details><summary>Co se stane po 30 dnech?</summary><p>Program přejde do režimu jen pro čtení. Všechno uvidíte, vytisknete a vyexportujete, jen nepůjde zakládat nové doklady. Po zadání licenčního klíče pokračujete tam, kde jste skončili.</p></details>
+      </div>
+      <div>
+        <details><summary>Zvládne to i neplátce DPH?</summary><p>Ano. V nastavení přepnete plátce nebo neplátce a faktury se podle toho upraví.</p></details>
+        <details><summary>Můžeme pracovat ve více lidech?</summary><p>Ano. Jeden počítač je hlavní a ostatní se připojí přes místní síť. Každý má vlastní přihlášení a oprávnění.</p></details>
+        <details><summary>Co program zatím neumí?</summary><p>Faktury do EU v režimu přenesení daňové povinnosti a export do Money S3. Pokud je potřebujete, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
+        <details><summary>Kolik stojí plná verze?</summary><p>Ceník zveřejníme před vydáním ostré verze. Pokud máte zájem už teď, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="icon.svg" alt="">Firmička</a>
+    <span>Kontakt: <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a></span>
+    <a href="podminky.html">Licenční podmínky</a>
+    <a href="stahnout.html">Ke stažení</a>
+    <a href="stahnout.html#novinky">Co je nového</a>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb"><button type="button" autofocus>Zavřít ✕</button><img alt=""><p></p></dialog>
+<script src="web.js"></script>
+</body>
+</html>
