@@ -1,0 +1,104 @@
+Firmička – sklad, faktury, pokladna a zakázky
+LICENČNÍ PODMÍNKY (verze 1.0, platné od 8. 11. 2026)
+
+1. ÚVOD
+1.1 Tyto podmínky upravují užívání programu Firmička („program“) mezi
+    autorem programu („autor“) a podnikatelem nebo organizací, která
+    program instaluje nebo užívá („uživatel“).
+1.2 Kontakt na autora: mojefirmicka@mojefirmicka.cz, web mojefirmicka.cz.
+1.3 Program je určen pro podnikání. Uživatel jej užívá v rámci své
+    podnikatelské nebo jiné samostatné činnosti.
+1.4 Instalací, spuštěním programu nebo vložením licenčního klíče
+    uživatel s podmínkami souhlasí. Pokud nesouhlasí, program
+    neinstaluje, případně jej odinstaluje.
+
+2. AUTORSKÁ PRÁVA
+2.1 Program je autorské dílo chráněné zákonem č. 121/2000 Sb.
+    (autorský zákon). Majetková práva k programu zůstávají autorovi.
+    Uživatel získává jen oprávnění popsaná v těchto podmínkách.
+
+3. ZKUŠEBNÍ UŽÍVÁNÍ A TESTOVACÍ VERZE
+3.1 Bez licenčního klíče smí uživatel program 30 dní zdarma užívat
+    v plném rozsahu.
+3.2 Po uplynutí zkušební doby (nebo platnosti licence) program přejde
+    do režimu jen pro čtení. Data lze dál prohlížet, tisknout,
+    exportovat a zálohovat. Přístup k vlastním datům uživatel nikdy
+    neztratí.
+3.3 Verze označené jako testovací jsou ve vývoji. Mohou obsahovat
+    chyby a jejich funkce se mohou měnit. Autor uvítá hlášení chyb
+    na kontaktní e-mail.
+
+4. LICENCE
+4.1 Úplatná licence vzniká zaplacením ceny podle nabídky autora
+    a doručením licenčního klíče.
+4.2 Licence je nevýhradní, nepřenosná a územně neomezená. Její rozsah
+    určuje licenční klíč: subjekt (IČO), počet uživatelů a doba
+    platnosti (časově omezená nebo neomezená).
+4.3 Uživatel smí program nainstalovat na libovolný počet počítačů
+    svého subjektu, pokud nepřekročí počet uživatelů podle klíče,
+    a pořizovat si zálohy programu i dat.
+4.4 Nárok na nové verze programu se řídí nabídkou platnou v době
+    koupě licence.
+
+5. CO UŽIVATEL NESMÍ
+5.1 Předávat licenční klíč jiným subjektům nebo jej zveřejňovat.
+5.2 Upravovat licenční klíč, obcházet nebo odstraňovat ochranu
+    licence.
+5.3 Program prodávat, pronajímat, půjčovat nebo jej poskytovat
+    třetím osobám jako službu bez písemného souhlasu autora.
+5.4 Instalační soubor smí uživatel beze změny předat dalším lidem
+    k vyzkoušení.
+
+6. ZRUŠENÍ LICENCE
+6.1 Při podstatném porušení bodu 5 může autor po předchozí výzvě
+    licenci zrušit. Zaplacená cena se v takovém případě nevrací.
+    Data zůstanou uživateli přístupná v režimu jen pro čtení.
+6.2 Uživatel může program kdykoli přestat používat.
+
+7. DATA A SOUKROMÍ
+7.1 Data se ukládají jen v počítači uživatele (ve Windows ve složce
+    %APPDATA%\Firmicka). Autor k nim nemá přístup a nesbírá je.
+7.2 Program se připojuje k internetu jen při dotazu do registru ARES
+    (doplnění firmy podle IČO) a při odesílání e-mailů přes poštovní
+    server nastavený uživatelem. Autorovi nic neodesílá.
+7.3 Uživatel je správcem osobních údajů svých zákazníků, dodavatelů
+    a zaměstnanců, které do programu ukládá (GDPR), a odpovídá za
+    jejich zabezpečení.
+7.4 Údaje poskytnuté při koupi licence (název, IČO, kontakt)
+    zpracovává autor jen k vystavení licence, dokladů a k evidenci
+    licencí.
+
+8. ODPOVĚDNOST
+8.1 Program se poskytuje „tak, jak je“. Autor nezaručuje, že bude
+    bez chyb nebo že bude vyhovovat každé konkrétní potřebě.
+8.2 Za správnost faktur, daňové evidence, přiznání, hlášení a dalších
+    výstupů odpovídá vždy uživatel. Doporučujeme výstupy (zejména první
+    faktury a podklady k DPH) zkontrolovat s účetní nebo daňovým
+    poradcem. Předpisy se mění a program nemusí každou změnu obsahovat
+    okamžitě.
+8.3 Program dělá denní zálohy. Uživatel přesto odpovídá za pravidelné
+    kopírování záloh mimo počítač (flashka, jiný disk, cloud).
+8.4 Autor neodpovídá za ušlý zisk, ztrátu dat, sankce úřadů ani
+    nepřímé škody. Celková odpovědnost autora je omezena částkou, kterou
+    uživatel za licenci zaplatil za posledních 12 měsíců. Při zkušebním
+    užívání zdarma je odpovědnost vyloučena v rozsahu, který zákon
+    dovoluje. Omezení neplatí pro škodu způsobenou úmyslně nebo z hrubé
+    nedbalosti a pro újmu na přirozených právech člověka.
+
+9. PROGRAMY TŘETÍCH STRAN
+9.1 Součástí instalace jsou programy třetích stran pod vlastními
+    licencemi, které komerční použití dovolují: Python (Python Software
+    Foundation License, viz python\LICENSE.txt), knihovna cryptography
+    (Apache 2.0 / BSD, viz složka licence), písmo DejaVu (viz
+    app\firmicka\static\fonts) a postup generátoru QR kódu podle Project
+    Nayuki (MIT).
+
+10. ZÁVĚREČNÁ USTANOVENÍ
+10.1 Podmínky se řídí právem České republiky, zejména občanským
+     zákoníkem a autorským zákonem.
+10.2 Autor může podmínky změnit. Nové znění platí pro nové verze
+     a nově vydané licence. Pro již vydané licence platí znění ke dni
+     jejich vydání, ledaže uživatel s novým zněním souhlasí.
+10.3 Je-li některé ustanovení neplatné, ostatní zůstávají v platnosti.
+
+Pokračováním v instalaci s těmito podmínkami souhlasíte.
