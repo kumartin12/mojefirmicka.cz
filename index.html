@@ -10,9 +10,7 @@
 <meta property="og:image" content="https://mojefirmicka.cz/img/prehled.webp">
 <meta property="og:type" content="website">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="styles.css">
 <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
 </head>
@@ -40,6 +38,7 @@
   <div class="wrap">
     <div>
       <p class="eyebrow">Pro živnostníky a malé firmy · <span class="beta">testovací verze</span></p>
+      <a class="eet-ready" href="#eet" title="Evidence tržeb podle zákona č. 180/2026 Sb."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><b>EET 2.0 ready</b><span>připraveno na evidenci tržeb od 1.&nbsp;1.&nbsp;2027</span></a>
       <h1>Sklad, faktury a&nbsp;pokladna. <em>V&nbsp;jednom programu.</em></h1>
       <p class="lead">Firmička běží u vás v počítači. Žádný cloud, žádná data u cizí firmy. Vystavíte fakturu s QR platbou, prodáte přes pokladnu, odepíšete zboží ze skladu a účetní dostane podklady na jedno kliknutí.</p>
       <div class="cta">
@@ -64,13 +63,20 @@
     </div>
   </div>
 </section>
+<section class="eet-strip" id="eet">
+  <div class="wrap">
+    <p><b>EET 2.0 je ve Firmičce hotové.</b> Od 1. 1. 2027 se musí evidovat každá platba hotově, kartou i QR kódem.
+    Firmička tržbu z pokladny i z faktury zaplacené na místě pošle Finanční správě sama a potvrzovací kód vytiskne na účtenku.
+    Když vypadne internet, prodáváte dál – tržby se odešlou dodatečně. Stačí nahrát pokladní certifikát z MOJE daně.</p>
+  </div>
+</section>
 
 <section class="sec band" id="prohlidka">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Prohlídka</p>
       <h2>Podívejte se, jak to vypadá</h2>
-      <p>Skutečné obrazovky z verze 1.10.7, ukázková firma Kávoservis Novák. Kliknutím obrázek zvětšíte.</p>
+      <p>Skutečné obrazovky z verze 1.10.9, ukázková firma Kávoservis Novák. Kliknutím obrázek zvětšíte.</p>
     </div>
     <div class="tour">
       <div class="tabs" role="tablist" aria-label="Části programu">
@@ -113,13 +119,13 @@
         <span class="tag">Zboží</span>
         <h3>Sklad</h3>
         <p>Přehled, co máte, kde to je a kolik to stojí.</p>
-        <ul><li>Více skladů a převodky mezi nimi</li><li>Čtečka čárových kódů a inventura</li><li>Hlídání minimálního stavu</li></ul>
+        <ul><li>Ceny bez DPH i s DPH, dodavatel, záruka</li><li>Více skladů, převodky, čtečka a inventura</li><li>Ceník služeb a práce (hodinová sazba)</li></ul>
       </article>
       <article class="mod">
         <span class="tag">Prodejna</span>
         <h3>Pokladna</h3>
         <p>Prodej přes pult s tiskem účtenky.</p>
-        <ul><li>Hotově, kartou nebo QR kódem na displeji</li><li>Účtenková tiskárna 58 i 80 mm</li><li>Denní uzávěrka</li></ul>
+        <ul><li>Hotově, kartou nebo QR kódem na displeji</li><li>EET 2.0 – evidence tržeb od roku 2027</li><li>Účtenková tiskárna 58 i 80 mm, denní uzávěrka</li></ul>
       </article>
       <article class="mod">
         <span class="tag">Servis</span>
@@ -137,7 +143,7 @@
         <span class="tag">Tým</span>
         <h3>Uživatelé a kalendář</h3>
         <p>Každý vidí jen to, co potřebuje.</p>
-        <ul><li>Role majitel, účetní, skladník, prodavač</li><li>Práce z více počítačů v místní síti</li><li>Společný kalendář, dovolené a poznámky</li></ul>
+        <ul><li>Role majitel, účetní, skladník, prodavač</li><li>Práce z více počítačů v místní síti</li><li>Kalendář po měsících i týdnech, dovolené</li></ul>
       </article>
     </div>
   </div>
@@ -192,7 +198,7 @@
     <ol class="steps">
       <li><h3>Stáhněte a nainstalujte</h3><p>Instalace nepotřebuje práva správce a trvá pár vteřin. Na ploše se objeví ikona s domečkem.</p></li>
       <li><h3>Vyplňte firmu</h3><p>Zadejte IČO a údaje se doplní z registru ARES. Pak první zboží a první faktura.</p></li>
-      <li><h3>Rozhodněte se</h3><p>Po 30 dnech zadáte licenční klíč, nebo program zůstane jen pro čtení. Vaše data se nikdy nezamknou.</p></li>
+      <li><h3>Rozhodněte se</h3><p>Cenu licence vám pošleme e-mailem. Po zadání klíče pokračujete dál, jinak program zůstane jen pro čtení. Vaše data se nikdy nezamknou.</p></li>
     </ol>
   </div>
 </section>
@@ -200,7 +206,7 @@
 <section class="sec dl" id="stahnout">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Testovací verze 1.10.7 · 5. 11. 2026</p>
+      <p class="eyebrow">Testovací verze 1.11.1 · 10. 11. 2026</p>
       <h2>Stáhnout Firmičku</h2>
       <p>Když si nejste jistí, berte instalátor pro Windows. Návod k instalaci a přehled novinek najdete na <a href="stahnout.html" style="color:#fff">stránce ke stažení</a>.</p>
     </div>
@@ -208,21 +214,21 @@
       <div class="file main">
         <span class="rec">Doporučeno</span>
         <h3>Windows instalátor</h3>
-        <span class="meta">Firmicka-Setup-1.10.7.exe · 12,8 MB</span>
+        <span class="meta">Firmicka-Setup-1.11.1.exe · 12,8 MB</span>
         <p>Windows 10 a 11. Vytvoří zástupce na ploše a v nabídce Start a sám dělá denní zálohy.</p>
-        <a class="btn primary" href="soubory/Firmicka-Setup-1.10.7.exe" download>Stáhnout .exe</a>
+        <a class="btn primary" href="soubory/Firmicka-Setup-1.11.1.exe" download>Stáhnout .exe</a>
       </div>
       <div class="file">
         <h3>Windows bez instalace</h3>
-        <span class="meta">Firmicka-1.10.7-windows-portable.zip · 15,9 MB</span>
+        <span class="meta">Firmicka-1.11.1-windows-portable.zip · 15,9 MB</span>
         <p>Rozbalíte třeba na flashku a spustíte. Hodí se na počítače, kam nejde nic instalovat.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.10.7-windows-portable.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.11.1-windows-portable.zip" download>Stáhnout .zip</a>
       </div>
       <div class="file">
         <h3>Mac a Linux</h3>
-        <span class="meta">Firmicka-1.10.7-linux-mac.zip · 0,9 MB</span>
+        <span class="meta">Firmicka-1.11.1-linux-mac.zip · 0,9 MB</span>
         <p>Potřebuje Python 3.10 nebo novější. Postup najdete v návodu na stránce ke stažení.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.10.7-linux-mac.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.11.1-linux-mac.zip" download>Stáhnout .zip</a>
       </div>
     </div>
     <p class="note">Program zatím není digitálně podepsaný, proto Windows při prvním spuštění může ukázat modré okno „Systém Windows ochránil počítač“. Klikněte na „Další informace“ a pak na „Přesto spustit“.</p>
@@ -246,7 +252,7 @@
         <details><summary>Zvládne to i neplátce DPH?</summary><p>Ano. V nastavení přepnete plátce nebo neplátce a faktury se podle toho upraví.</p></details>
         <details><summary>Můžeme pracovat ve více lidech?</summary><p>Ano. Jeden počítač je hlavní a ostatní se připojí přes místní síť. Každý má vlastní přihlášení a oprávnění.</p></details>
         <details><summary>Co program zatím neumí?</summary><p>Faktury do EU v režimu přenesení daňové povinnosti a export do Money S3. Pokud je potřebujete, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
-        <details><summary>Kolik stojí plná verze?</summary><p>Ceník zveřejníme před vydáním ostré verze. Pokud máte zájem už teď, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
+        <details><summary>Kolik stojí plná verze?</summary><p>Nejdřív si Firmičku 30 dní zdarma vyzkoušejte. Když vám sedne, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz?subject=Cena%20licence%20Firmi%C4%8Dka">mojefirmicka@mojefirmicka.cz</a> a cenu licence vám pošleme e-mailem – podle počtu uživatelů a toho, co budete používat.</p></details>
       </div>
     </div>
   </div>

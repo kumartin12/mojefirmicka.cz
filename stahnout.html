@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stáhnout Firmičku – testovací verze 1.10.7</title>
+<title>Stáhnout Firmičku – testovací verze 1.11.1</title>
 <meta name="description" content="Stáhněte si testovací verzi Firmičky pro Windows, Mac nebo Linux. 30 dní plně funkční, bez registrace. Návod k instalaci a přehled novinek.">
-<meta property="og:title" content="Stáhnout Firmičku – testovací verze 1.10.7">
+<meta property="og:title" content="Stáhnout Firmičku – testovací verze 1.11.1">
 <meta property="og:image" content="https://mojefirmicka.cz/img/faktura.webp">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="styles.css">
 <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
 </head>
@@ -29,16 +27,16 @@
     <button class="theme" type="button" aria-label="Přepnout světlý / tmavý vzhled" title="Světlý / tmavý vzhled">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     </button>
-    <a class="btn primary small" href="soubory/Firmicka-Setup-1.10.7.exe" download>Stáhnout .exe</a>
+    <a class="btn primary small" href="soubory/Firmicka-Setup-1.11.1.exe" download>Stáhnout .exe</a>
   </div>
 </header>
 
 <main>
 <section class="page-head">
   <div class="wrap">
-    <p class="eyebrow"><span class="beta">testovací verze</span> · 1.10.7 · vydáno 5. 11. 2026</p>
+    <p class="eyebrow"><span class="beta">testovací verze</span> · 1.11.1 · vydáno 10. 11. 2026</p>
     <h1>Stáhnout Firmičku</h1>
-    <p class="lead">Plná verze na 30 dní, bez registrace a bez zadávání karty. Pak zadáte licenční klíč, nebo program zůstane jen pro čtení. Vaše data se nikdy nezamknou.</p>
+    <p class="lead">Plná verze na 30 dní, bez registrace a bez zadávání karty. Cenu licence vám pošleme na <a href="mailto:mojefirmicka@mojefirmicka.cz?subject=Cena%20licence%20Firmi%C4%8Dka">mojefirmicka@mojefirmicka.cz</a>. Bez licence program zůstane jen pro čtení, vaše data se nikdy nezamknou.</p>
   </div>
 </section>
 
@@ -48,24 +46,24 @@
       <div class="file main">
         <span class="rec">Doporučeno</span>
         <h3>Windows instalátor</h3>
-        <span class="meta">Firmicka-Setup-1.10.7.exe · 12,8 MB</span>
+        <span class="meta">Firmicka-Setup-1.11.1.exe · 12,8 MB</span>
         <p>Windows 10 a 11. Instalace bez práv správce, zástupce na ploše a v nabídce Start, denní zálohy.</p>
-        <a class="btn primary" href="soubory/Firmicka-Setup-1.10.7.exe" download>
+        <a class="btn primary" href="soubory/Firmicka-Setup-1.11.1.exe" download>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></svg>
           Stáhnout .exe
         </a>
       </div>
       <div class="file">
         <h3>Windows bez instalace</h3>
-        <span class="meta">Firmicka-1.10.7-windows-portable.zip · 15,9 MB</span>
+        <span class="meta">Firmicka-1.11.1-windows-portable.zip · 15,9 MB</span>
         <p>Rozbalíte kamkoli, třeba na flashku, a spustíte „Spustit Firmicka.bat“.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.10.7-windows-portable.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.11.1-windows-portable.zip" download>Stáhnout .zip</a>
       </div>
       <div class="file">
         <h3>Mac a Linux</h3>
-        <span class="meta">Firmicka-1.10.7-linux-mac.zip · 0,9 MB</span>
+        <span class="meta">Firmicka-1.11.1-linux-mac.zip · 0,9 MB</span>
         <p>Potřebuje Python 3.10 nebo novější. Spouští se ze Terminálu, viz návod níže.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.10.7-linux-mac.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.11.1-linux-mac.zip" download>Stáhnout .zip</a>
       </div>
     </div>
     <p class="note">Užívání programu se řídí <a href="podminky.html" style="color:#fff">licenčními podmínkami</a>, které vám ukáže i instalátor.</p>
@@ -88,7 +86,7 @@
       <div>
         <h3>Windows</h3>
         <ol>
-          <li>Stáhněte <b>Firmicka-Setup-1.10.7.exe</b> a otevřete ho.</li>
+          <li>Stáhněte <b>Firmicka-Setup-1.11.1.exe</b> a otevřete ho.</li>
           <li>Projděte průvodcem. Práva správce nejsou potřeba.</li>
           <li>Na ploše se objeví ikona s domečkem. Firmička se otevře v prohlížeči.</li>
           <li>V Nastavení zadejte IČO, údaje firmy se doplní z ARES.</li>
@@ -98,20 +96,20 @@
       <div>
         <h3>Mac a Linux</h3>
         <ol>
-          <li>Rozbalte <b>Firmicka-1.10.7-linux-mac.zip</b>, vznikne složka <span class="k">firmicka</span>.</li>
+          <li>Rozbalte <b>Firmicka-1.11.1-linux-mac.zip</b>, vznikne složka <span class="k">firmicka</span>.</li>
           <li>Otevřete Terminál ve složce a spusťte <span class="k">sh start.sh</span>.</li>
           <li>Firmička se otevře v prohlížeči. Terminál nechte běžet.</li>
         </ol>
-        <p>Na Macu Python nainstalujete příkazem <span class="k">xcode-select --install</span> nebo z python.org. Data jsou v <span class="k">~/.local/share/firmicka</span>. Šifrovaná záloha na USB potřebuje navíc <span class="k">pip3 install cryptography</span>.</p>
+        <p>Na Macu Python nainstalujete příkazem <span class="k">xcode-select --install</span> nebo z python.org. Data jsou v <span class="k">~/.local/share/firmicka</span>. Evidence tržeb (EET) a šifrovaná záloha na USB potřebují navíc <span class="k">pip3 install cryptography</span>.</p>
       </div>
     </div>
 
     <details class="sums" style="margin-top:44px">
       <summary>Kontrolní součty SHA-256</summary>
-      <pre>724d6589b12bac8e96fddb5d56169c6844df7d23ee3d8d3920343e2a2a4e1cf8  Firmicka-Setup-1.10.7.exe
-5ffb08cf87913c173ae7d6aa692f0290195b29c88af75259f3362ce410e23a6c  Firmicka-1.10.7-windows-portable.zip
-7a24d60ac602697dc77930ba973d4e4cd5ea260f5f1b4fd105935e963ba41871  Firmicka-1.10.7-linux-mac.zip</pre>
-      <p>Ve Windows ověříte v PowerShellu: <span class="k">Get-FileHash .\Firmicka-Setup-1.10.7.exe</span>. Na Macu a Linuxu: <span class="k">shasum -a 256 soubor</span>. Součty ke stažení: <a href="soubory/SHA256SUMS.txt">SHA256SUMS.txt</a>.</p>
+      <pre>f8b9efdaf8f64c4e07ba56ccef3354454488d9279a38b281fb43495479911f1b  Firmicka-Setup-1.11.1.exe
+72707874c574326d7fcd6905032132aa99cb4c07ace7bc05823d9c9a3527cffe  Firmicka-1.11.1-windows-portable.zip
+73ddffda42cf6e4166b9dedc70c19cde65a580bbe0787580307f12120f37f770  Firmicka-1.11.1-linux-mac.zip</pre>
+      <p>Ve Windows ověříte v PowerShellu: <span class="k">Get-FileHash .\Firmicka-Setup-1.11.1.exe</span>. Na Macu a Linuxu: <span class="k">shasum -a 256 soubor</span>. Součty ke stažení: <a href="soubory/SHA256SUMS.txt">SHA256SUMS.txt</a>.</p>
     </details>
   </div>
 </section>
@@ -138,6 +136,28 @@
       <p>Firmička je v testovacím provozu a nové verze vycházejí často. Doporučujeme mít vždy tu nejnovější.</p>
     </div>
     <div class="log">
+      <article><div><h3>1.11.1</h3><p class="when">10. 11. 2026</p></div><ul>
+        <li>Na zakázkovém listu (tisk i PDF) je jméno toho, kdo zakázku zapsal</li></ul></article>
+      <article><div><h3>1.11.0</h3><p class="when">10. 11. 2026</p></div><ul>
+        <li><b>EET 2.0</b> – evidence tržeb podle zákona platného od 1. 1. 2027: pokladna a faktury placené hotově nebo kartou se posílají Finanční správě samy</li>
+        <li>Potvrzovací kód (POK) na účtence, storno pošle zápornou tržbu</li>
+        <li>Při výpadku internetu prodej proběhne normálně, tržba se pošle dodatečně (lhůta 48 hodin hlídaná upozorněním)</li>
+        <li>Nastavení EET: pokladní certifikát z MOJE daně, evidenční jednotky po skladech, test spojení</li></ul></article>
+      <article><div><h3>1.10.10</h3><p class="when">10. 11. 2026</p></div><ul>
+        <li>U služeb se na faktuře nikdy netiskne záruka</li>
+        <li>V PDF faktury zůstává zboží na stejné stránce jako jeho poplatek a záruka</li>
+        <li>Odhlášení po nečinnosti už nepřeruší rozepsaný doklad</li>
+        <li>Srozumitelná hláška, když jiný uživatel položku mezitím smaže</li>
+        <li>Nápověda u ceny s DPH, kterou nejde složit přesně; tabulka skladu na tabletu</li></ul></article>
+      <article><div><h3>1.10.9</h3><p class="when">9. 11. 2026</p></div><ul>
+        <li>Záruka u zboží se tiskne na fakturu (na obrazovce, při tisku i v PDF)</li></ul></article>
+      <article><div><h3>1.10.8</h3><p class="when">9. 11. 2026</p></div><ul>
+        <li>Ceník služeb a práce: hodinová sazba, doprava, diagnostika – na dokladech jako zboží, ale bez skladu</li>
+        <li>Ceny ve skladu bez DPH i s DPH, nákupní i prodejní; stačí zadat jednu, druhá se dopočítá</li>
+        <li>Dodavatel a délka záruky u položky, hledání a filtr podle dodavatele</li>
+        <li>Týdenní pohled v kalendáři</li>
+        <li>Smazání nepoužité položky (jen správce)</li>
+        <li>Automatické odhlášení po nečinnosti (nastavitelné, výchozí 30 minut)</li></ul></article>
       <article><div><h3>1.10.7</h3><p class="when">5. 11. 2026</p></div><ul>
         <li>Kontrola čísla účtu a IBAN, variabilní symbol nejvýš 10 číslic</li>
         <li>Import ISDOC: dobropisy, upozornění na nesoulad součtů od dodavatele</li>
