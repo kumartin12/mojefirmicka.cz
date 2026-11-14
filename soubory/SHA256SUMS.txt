@@ -1,3 +1,3 @@
-f8b9efdaf8f64c4e07ba56ccef3354454488d9279a38b281fb43495479911f1b  Firmicka-Setup-1.11.1.exe
-72707874c574326d7fcd6905032132aa99cb4c07ace7bc05823d9c9a3527cffe  Firmicka-1.11.1-windows-portable.zip
-73ddffda42cf6e4166b9dedc70c19cde65a580bbe0787580307f12120f37f770  Firmicka-1.11.1-linux-mac.zip
+4be1ee418f5897d47592144f9f1e08a33f431942cc7c10ae7975aad757b02939  Firmicka-Setup-1.12.3.exe
+87ad52492d07dd2ea6711dbbf2a9de27fa60494c6762b85057a0c6bf914c64ae  Firmicka-1.12.3-windows-portable.zip
+8b676c0560bb64a79db442c29adeeb29647dc1068d850d2bed4bcff3da41063a  Firmicka-1.12.3-linux-mac.zip

@@ -87,6 +87,7 @@
         <button class="tab" role="tab" aria-selected="false" data-shot="zakazky" data-cap="Servisní zakázky se stavy Nová, Pracuje se, Čeká na díl, Čeká na zákazníka a Hotová. U každé vidíte poslední záznam z historie."><b>Zakázky</b><span>Servis od příjmu po výdej</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="zakazka" data-cap="Detail zakázky: změna stavu, záznam o kontaktu se zákazníkem, materiál a práce. Zakázkový list A5 vytisknete i s podpisem."><b>Detail zakázky</b><span>Historie a zakázkový list</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="sklad" data-cap="Sklad se stavem, minimem, nákupní cenou a hodnotou zásob. Co dochází, je zvýrazněné."><b>Sklad</b><span>Zásoby, minima, inventura</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="majetek" data-cap="Evidence majetku: inventární čísla, kde co je a kdo to má, pořizovací cena a záruka. Štítky s QR kódem vytisknete na arch A4 i na tiskárnu štítků."><b>Majetek</b><span>Evidence a štítky s QR</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="kalendar" data-cap="Společný kalendář s dovolenými, schůzkami a termíny. Státní svátky se doplní samy."><b>Kalendář</b><span>Dovolené, termíny, poznámky</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="export" data-cap="Export pro účetní: vyberete měsíc a stáhnete soubor pro Pohodu, ISDOC nebo tabulku do Excelu."><b>Pro účetní</b><span>Pohoda, ISDOC, Excel</span></button>
       </div>
@@ -119,7 +120,7 @@
         <span class="tag">Zboží</span>
         <h3>Sklad</h3>
         <p>Přehled, co máte, kde to je a kolik to stojí.</p>
-        <ul><li>Ceny bez DPH i s DPH, dodavatel, záruka</li><li>Více skladů, převodky, čtečka a inventura</li><li>Ceník služeb a práce (hodinová sazba)</li></ul>
+        <ul><li>Ceny bez DPH i s DPH, dodavatel, záruka</li><li>Více skladů, převodky, čtečka a inventura</li><li>Evidence majetku se štítky s QR kódem</li><li>Ceník služeb a práce (hodinová sazba)</li></ul>
       </article>
       <article class="mod">
         <span class="tag">Prodejna</span>
@@ -178,6 +179,7 @@
       <p class="eyebrow">Na telefonu i tabletu</p>
       <h2>Z mobilu se podíváte, co je potřeba</h2>
       <p>Firmička se otevírá v prohlížeči, takže ji z telefonu nebo tabletu ve firemní síti otevřete taky. Stačí zapnout práci v síti a přihlásit se. Nic se neinstaluje.</p>
+      <p>Mimo firmu, třeba u zákazníka nebo doma, se k Firmičce připojíte přes <strong>VPN</strong>, například zdarma přes WireGuard nebo Tailscale. Telefon se pak chová, jako by byl ve firemní síti. Bez VPN program do internetu otevřený není a být nemá.</p>
       <p>Data přitom zůstávají na jednom počítači ve firmě. Denní zálohy dělá program sám.</p>
     </div>
     <div class="phones">
@@ -206,7 +208,7 @@
 <section class="sec dl" id="stahnout">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Testovací verze 1.11.1 · 10. 11. 2026</p>
+      <p class="eyebrow">Testovací verze 1.12.3 · 14. 11. 2026</p>
       <h2>Stáhnout Firmičku</h2>
       <p>Když si nejste jistí, berte instalátor pro Windows. Návod k instalaci a přehled novinek najdete na <a href="stahnout.html" style="color:#fff">stránce ke stažení</a>.</p>
     </div>
@@ -214,21 +216,21 @@
       <div class="file main">
         <span class="rec">Doporučeno</span>
         <h3>Windows instalátor</h3>
-        <span class="meta">Firmicka-Setup-1.11.1.exe · 12,8 MB</span>
+        <span class="meta">Firmicka-Setup-1.12.3.exe · 12,9 MB</span>
         <p>Windows 10 a 11. Vytvoří zástupce na ploše a v nabídce Start a sám dělá denní zálohy.</p>
-        <a class="btn primary" href="soubory/Firmicka-Setup-1.11.1.exe" download>Stáhnout .exe</a>
+        <a class="btn primary" href="soubory/Firmicka-Setup-1.12.3.exe" download>Stáhnout .exe</a>
       </div>
       <div class="file">
         <h3>Windows bez instalace</h3>
-        <span class="meta">Firmicka-1.11.1-windows-portable.zip · 15,9 MB</span>
+        <span class="meta">Firmicka-1.12.3-windows-portable.zip · 15,9 MB</span>
         <p>Rozbalíte třeba na flashku a spustíte. Hodí se na počítače, kam nejde nic instalovat.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.11.1-windows-portable.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.12.3-windows-portable.zip" download>Stáhnout .zip</a>
       </div>
       <div class="file">
         <h3>Mac a Linux</h3>
-        <span class="meta">Firmicka-1.11.1-linux-mac.zip · 0,9 MB</span>
+        <span class="meta">Firmicka-1.12.3-linux-mac.zip · 1,0 MB</span>
         <p>Potřebuje Python 3.10 nebo novější. Postup najdete v návodu na stránce ke stažení.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.11.1-linux-mac.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.12.3-linux-mac.zip" download>Stáhnout .zip</a>
       </div>
     </div>
     <p class="note">Program zatím není digitálně podepsaný, proto Windows při prvním spuštění může ukázat modré okno „Systém Windows ochránil počítač“. Klikněte na „Další informace“ a pak na „Přesto spustit“.</p>
@@ -244,13 +246,15 @@
     <div class="faq">
       <div>
         <details open><summary>Potřebuju internet?</summary><p>Ne. Firmička běží ve vašem počítači a otevírá se v prohlížeči. Internet je potřeba jen pro ARES, odesílání e-mailů a stažení nové verze.</p></details>
-        <details><summary>Kde jsou moje data?</summary><p>V jednom souboru ve vašem počítači. Program každý den udělá zálohu a uchová ji 30 dní. Zálohu můžete uložit i zašifrovanou na flashku.</p></details>
+        <details><summary>Kde jsou moje data?</summary><p>V jednom souboru ve vašem počítači. Program zálohuje sám, průběžně během dne i při ukončení, a uchová zálohy za posledních 30 dní. Zálohu můžete uložit i zašifrovanou na flashku.</p></details>
         <details><summary>Co znamená „testovací verze“?</summary><p>Program je hotový a používá se, ale ještě ho ladíme podle zpětné vazby. Nové verze stáhnete tady na webu a nainstalujete přes starou, data zůstanou.</p></details>
         <details><summary>Co se stane po 30 dnech?</summary><p>Program přejde do režimu jen pro čtení. Všechno uvidíte, vytisknete a vyexportujete, jen nepůjde zakládat nové doklady. Po zadání licenčního klíče pokračujete tam, kde jste skončili.</p></details>
       </div>
       <div>
         <details><summary>Zvládne to i neplátce DPH?</summary><p>Ano. V nastavení přepnete plátce nebo neplátce a faktury se podle toho upraví.</p></details>
+        <details><summary>Počítá Firmička DPH z cen bez DPH, nebo s DPH?</summary><p>Obojí. Standardně z cen bez DPH (výpočet zdola). Zaškrtnete-li u dokladu „Ceny s DPH“, platí zadané částky s DPH přesně a daň se z nich vypočítá (výpočet shora podle § 37 zákona o DPH) – hodí se pro pokladnu a prodej koncovým zákazníkům.</p></details>
         <details><summary>Můžeme pracovat ve více lidech?</summary><p>Ano. Jeden počítač je hlavní a ostatní se připojí přes místní síť. Každý má vlastní přihlášení a oprávnění.</p></details>
+        <details><summary>Jde to i z mobilu mimo firmu?</summary><p>Ano, přes VPN do firemní sítě (třeba WireGuard nebo Tailscale, obojí zdarma). Telefon nebo notebook se pak připojí stejně jako v kanceláři. Hlavní počítač ve firmě musí běžet. Firmičku nezveřejňujte přímo do internetu přesměrováním portu na routeru.</p></details>
         <details><summary>Co program zatím neumí?</summary><p>Faktury do EU v režimu přenesení daňové povinnosti a export do Money S3. Pokud je potřebujete, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
         <details><summary>Kolik stojí plná verze?</summary><p>Nejdřív si Firmičku 30 dní zdarma vyzkoušejte. Když vám sedne, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz?subject=Cena%20licence%20Firmi%C4%8Dka">mojefirmicka@mojefirmicka.cz</a> a cenu licence vám pošleme e-mailem – podle počtu uživatelů a toho, co budete používat.</p></details>
       </div>
