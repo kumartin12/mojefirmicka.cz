@@ -89,7 +89,7 @@
         <button class="tab" role="tab" aria-selected="false" data-shot="sklad" data-cap="Sklad se stavem, minimem, nákupní cenou a hodnotou zásob. Co dochází, je zvýrazněné."><b>Sklad</b><span>Zásoby, minima, inventura</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="majetek" data-cap="Evidence majetku: inventární čísla, kde co je a kdo to má, pořizovací cena a záruka. Štítky s QR kódem vytisknete na arch A4 i na tiskárnu štítků."><b>Majetek</b><span>Evidence a štítky s QR</span></button>
         <button class="tab" role="tab" aria-selected="false" data-shot="kalendar" data-cap="Společný kalendář s dovolenými, schůzkami a termíny. Státní svátky se doplní samy."><b>Kalendář</b><span>Dovolené, termíny, poznámky</span></button>
-        <button class="tab" role="tab" aria-selected="false" data-shot="export" data-cap="Export pro účetní: vyberete měsíc a stáhnete soubor pro Pohodu, ISDOC nebo tabulku do Excelu."><b>Pro účetní</b><span>Pohoda, ISDOC, Excel</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-shot="export" data-cap="Export pro účetní: vyberete měsíc a stáhnete soubor pro Pohodu, Money S3, ISDOC nebo tabulku do Excelu."><b>Pro účetní</b><span>Pohoda, Money, ISDOC, Excel</span></button>
       </div>
       <div>
         <div class="win">
@@ -114,7 +114,7 @@
         <span class="tag">Doklady</span>
         <h3>Faktury</h3>
         <p>Vydané i přijaté faktury, plátce i neplátce DPH.</p>
-        <ul><li>QR platba a PDF ke stažení</li><li>Zálohy, dobropisy, daňové doklady k platbě</li><li>Odeslání e-mailem, upomínky ve 3 stupních</li></ul>
+        <ul><li>QR platba a PDF ke stažení</li><li>Zálohy, dobropisy, daňové doklady k platbě</li><li>Odeslání e-mailem, upomínky ve 3 stupních – i hromadně</li></ul>
       </article>
       <article class="mod">
         <span class="tag">Zboží</span>
@@ -138,7 +138,7 @@
         <span class="tag">Peníze</span>
         <h3>Banka a deník</h3>
         <p>Platby se spárují samy podle variabilního symbolu.</p>
-        <ul><li>Import výpisu (GPC, camt.053, CSV)</li><li>Peněžní deník příjmů a výdajů</li><li>Nabídky, které se jedním klikem stanou zakázkou</li></ul>
+        <ul><li>Import výpisu (GPC, camt.053, CSV) a hromadné párování plateb</li><li>Peněžní deník příjmů a výdajů</li><li>Nabídky, které se jedním klikem stanou zakázkou</li></ul>
       </article>
       <article class="mod">
         <span class="tag">Tým</span>
@@ -160,9 +160,11 @@
       </div>
       <div class="formats" style="margin-top:32px">
         <div class="fmt"><code>POHODA XML</code><span>Vydané a přijaté faktury, zálohy a dobropisy rovnou do Pohody.</span></div>
-        <div class="fmt"><code>ISDOC 6.0.2</code><span>Český standard elektronické faktury. Načte ho většina účetních programů.</span></div>
-        <div class="fmt"><code>DPHDP3 · DPHKH1</code><span>Přiznání k DPH a kontrolní hlášení jako XML pro portál finanční správy.</span></div>
+        <div class="fmt"><code>Money S3 XML</code><span>Vydané a přijaté faktury, daňové doklady k zálohám a dobropisy do Money S3.</span></div>
+        <div class="fmt"><code>ISDOC 6.0.2</code><span>Český standard elektronické faktury, vydané i přijaté. Načte ho většina účetních programů – Aconto, Money a další. Přijaté faktury načtete i hromadně.</span></div>
+        <div class="fmt"><code>DPHDP3 · DPHKH1 · DPHSHV</code><span>Přiznání k DPH, kontrolní a souhrnné hlášení jako XML pro portál finanční správy – i s přenesenou daňovou povinností a plněním do EU.</span></div>
         <div class="fmt"><code>CSV</code><span>Tabulky pro Excel: vydané a přijaté faktury, peněžní deník.</span></div>
+        <div class="fmt"><code>Import CSV · XLSX</code><span>Adresář a zboží z jiného programu nebo z Excelu – přechod bez přepisování.</span></div>
       </div>
     </div>
     <div class="win">
@@ -208,7 +210,7 @@
 <section class="sec dl" id="stahnout">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Testovací verze 1.12.3 · 14. 11. 2026</p>
+      <p class="eyebrow">Testovací verze 1.12.14 · 17. 11. 2026</p>
       <h2>Stáhnout Firmičku</h2>
       <p>Když si nejste jistí, berte instalátor pro Windows. Návod k instalaci a přehled novinek najdete na <a href="stahnout.html" style="color:#fff">stránce ke stažení</a>.</p>
     </div>
@@ -216,21 +218,21 @@
       <div class="file main">
         <span class="rec">Doporučeno</span>
         <h3>Windows instalátor</h3>
-        <span class="meta">Firmicka-Setup-1.12.3.exe · 12,9 MB</span>
+        <span class="meta">Firmicka-Setup-1.12.14.exe · 12,9 MB</span>
         <p>Windows 10 a 11. Vytvoří zástupce na ploše a v nabídce Start a sám dělá denní zálohy.</p>
-        <a class="btn primary" href="soubory/Firmicka-Setup-1.12.3.exe" download>Stáhnout .exe</a>
+        <a class="btn primary" href="soubory/Firmicka-Setup-1.12.14.exe" download>Stáhnout .exe</a>
       </div>
       <div class="file">
         <h3>Windows bez instalace</h3>
-        <span class="meta">Firmicka-1.12.3-windows-portable.zip · 15,9 MB</span>
+        <span class="meta">Firmicka-1.12.14-windows-portable.zip · 15,9 MB</span>
         <p>Rozbalíte třeba na flashku a spustíte. Hodí se na počítače, kam nejde nic instalovat.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.12.3-windows-portable.zip" download>Stáhnout .zip</a>
+        <a class="btn ghost" href="soubory/Firmicka-1.12.14-windows-portable.zip" download>Stáhnout .zip</a>
       </div>
       <div class="file">
         <h3>Mac a Linux</h3>
-        <span class="meta">Firmicka-1.12.3-linux-mac.zip · 1,0 MB</span>
-        <p>Potřebuje Python 3.10 nebo novější. Postup najdete v návodu na stránce ke stažení.</p>
-        <a class="btn ghost" href="soubory/Firmicka-1.12.3-linux-mac.zip" download>Stáhnout .zip</a>
+        <span class="meta">Firmicka-1.12.14-linux-mac.zip · 1,0 MB</span>
+        <p>Potřebuje Python 3.8 nebo novější. Postup najdete v návodu na stránce ke stažení.</p>
+        <a class="btn ghost" href="soubory/Firmicka-1.12.14-linux-mac.zip" download>Stáhnout .zip</a>
       </div>
     </div>
     <p class="note">Program zatím není digitálně podepsaný, proto Windows při prvním spuštění může ukázat modré okno „Systém Windows ochránil počítač“. Klikněte na „Další informace“ a pak na „Přesto spustit“.</p>
@@ -255,7 +257,7 @@
         <details><summary>Počítá Firmička DPH z cen bez DPH, nebo s DPH?</summary><p>Obojí. Standardně z cen bez DPH (výpočet zdola). Zaškrtnete-li u dokladu „Ceny s DPH“, platí zadané částky s DPH přesně a daň se z nich vypočítá (výpočet shora podle § 37 zákona o DPH) – hodí se pro pokladnu a prodej koncovým zákazníkům.</p></details>
         <details><summary>Můžeme pracovat ve více lidech?</summary><p>Ano. Jeden počítač je hlavní a ostatní se připojí přes místní síť. Každý má vlastní přihlášení a oprávnění.</p></details>
         <details><summary>Jde to i z mobilu mimo firmu?</summary><p>Ano, přes VPN do firemní sítě (třeba WireGuard nebo Tailscale, obojí zdarma). Telefon nebo notebook se pak připojí stejně jako v kanceláři. Hlavní počítač ve firmě musí běžet. Firmičku nezveřejňujte přímo do internetu přesměrováním portu na routeru.</p></details>
-        <details><summary>Co program zatím neumí?</summary><p>Faktury do EU v režimu přenesení daňové povinnosti a export do Money S3. Pokud je potřebujete, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
+        <details><summary>Co program zatím neumí?</summary><p>Dovoz zboží ze zemí mimo EU, krácený odpočet DPH a třístranný obchod. Pokud je potřebujete, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz">mojefirmicka@mojefirmicka.cz</a>.</p></details>
         <details><summary>Kolik stojí plná verze?</summary><p>Nejdřív si Firmičku 30 dní zdarma vyzkoušejte. Když vám sedne, napište na <a href="mailto:mojefirmicka@mojefirmicka.cz?subject=Cena%20licence%20Firmi%C4%8Dka">mojefirmicka@mojefirmicka.cz</a> a cenu licence vám pošleme e-mailem – podle počtu uživatelů a toho, co budete používat.</p></details>
       </div>
     </div>

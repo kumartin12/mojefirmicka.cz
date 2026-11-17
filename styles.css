@@ -4,8 +4,8 @@
   --blue: #2f6fde; --blue-deep: #1d4fb0; --blue-wash: #e8effc; --stamp: #c8402f; --ok: #1f8a4c; --warn-wash: #fff4dc;
   --on-blue: #ffffff;
   --shadow: 0 1px 0 var(--line), 0 30px 60px -32px rgba(20, 35, 80, .45);
-  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   color-scheme: light;
 }
@@ -28,7 +28,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 img { max-width: 100%; display: block; }
 a { color: var(--blue); }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
-h1, h2, h3 { font-family: var(--display); line-height: 1.08; text-wrap: balance; margin: 0; letter-spacing: -0.015em; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.08; text-wrap: balance; margin: 0; letter-spacing: -0.025em; }
 p { margin: 0; }
 .wrap { max-width: 1160px; margin: 0 auto; padding-inline: 16px; }
 @media (min-width: 700px) { .wrap { padding-inline: 28px; } }
@@ -60,7 +60,7 @@ p { margin: 0; }
 
 /* hero */
 .hero .wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.25fr); gap: 52px; align-items: center; padding-block: 64px 80px; }
-.hero h1 { font-size: clamp(38px, 5.4vw, 66px); font-weight: 800; margin-top: 14px; }
+.hero h1 { font-size: clamp(36px, 4.6vw, 58px); font-weight: 800; margin-top: 14px; letter-spacing: -0.03em; }
 .hero h1 em { font-style: normal; color: var(--blue); }
 .hero .lead { font-size: 19px; color: var(--muted); max-width: 36ch; margin-top: 22px; }
 .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
