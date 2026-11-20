@@ -1,5 +1,5 @@
 Firmička – sklad, faktury, pokladna a zakázky
-LICENČNÍ PODMÍNKY (verze 1.0, platné od 8. 11. 2026)
+LICENČNÍ PODMÍNKY (verze 1.1, platné od 20. 11. 2026)
 
 1. ÚVOD
 1.1 Tyto podmínky upravují užívání programu Firmička („program“) mezi
@@ -27,10 +27,14 @@ LICENČNÍ PODMÍNKY (verze 1.0, platné od 8. 11. 2026)
 3.3 Verze označené jako testovací jsou ve vývoji. Mohou obsahovat
     chyby a jejich funkce se mohou měnit. Autor uvítá hlášení chyb
     na kontaktní e-mail.
+3.4 Během vývoje může autor na žádost bezplatně vystavit testovací
+    licenci s omezenou dobou platnosti (zpravidla 6 měsíců). Na její
+    vystavení, prodloužení ani na pozdější bezplatnou licenci není
+    právní nárok. Po skončení platnosti platí bod 3.2.
 
 4. LICENCE
-4.1 Úplatná licence vzniká zaplacením ceny podle nabídky autora
-    a doručením licenčního klíče.
+4.1 Licence vzniká doručením licenčního klíče; úplatná licence navíc
+    zaplacením ceny podle nabídky autora.
 4.2 Licence je nevýhradní, nepřenosná a územně neomezená. Její rozsah
     určuje licenční klíč: subjekt (IČO), počet uživatelů a doba
     platnosti (časově omezená nebo neomezená).
@@ -81,7 +85,7 @@ LICENČNÍ PODMÍNKY (verze 1.0, platné od 8. 11. 2026)
 8.4 Autor neodpovídá za ušlý zisk, ztrátu dat, sankce úřadů ani
     nepřímé škody. Celková odpovědnost autora je omezena částkou, kterou
     uživatel za licenci zaplatil za posledních 12 měsíců. Při zkušebním
-    užívání zdarma je odpovědnost vyloučena v rozsahu, který zákon
+    užívání a testovací licenci zdarma je odpovědnost vyloučena v rozsahu, který zákon
     dovoluje. Omezení neplatí pro škodu způsobenou úmyslně nebo z hrubé
     nedbalosti a pro újmu na přirozených právech člověka.
 

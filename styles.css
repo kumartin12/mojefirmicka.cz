@@ -75,7 +75,7 @@ p { margin: 0; }
 .win .bar span { margin-left: 10px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); background: var(--sheet); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .win img { width: 100%; height: auto; aspect-ratio: 1360 / 850; }
 .hero .win { transform: perspective(1600px) rotateY(-4deg) rotateX(1deg); }
-@media (max-width: 960px) { .hero .win { transform: none; } }
+@media (max-width: 960px) { .hero .win { transform: perspective(1600px) rotateY(-4deg) rotateX(1deg); } }
 .shot-dark { display: none; }
 :root[data-theme="dark"] .shot-light { display: none; }
 :root[data-theme="dark"] .shot-dark { display: block; }
@@ -243,3 +243,66 @@ footer .brand img { width: 24px; height: 24px; }
 .eet-strip .wrap { padding-block: 22px; }
 .eet-strip p { max-width: 80ch; color: var(--muted); }
 .eet-strip b { color: var(--ink); }
+
+/* zpětná vazba – chyby, připomínky, nápady */
+.feedback { display: flex; gap: 24px 40px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  margin-top: 48px; padding: 28px 32px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); }
+.feedback > div:first-child { max-width: 640px; display: grid; gap: 8px; }
+.feedback h3 { font-size: 22px; }
+.feedback p { color: var(--muted); }
+.feedback .cta { margin-top: 0; }
+@media (max-width: 640px) { .feedback { padding: 22px 20px; } }
+
+/* úvod: na čem Firmička běží */
+.os { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 26px; }
+.os-lbl { font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.os-chip { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--sheet); color: var(--ink); text-decoration: none; font-size: 15px; transition: border-color .15s; }
+.os-chip:hover { border-color: var(--blue); }
+.os-chip svg { width: 20px; height: 20px; color: var(--blue); flex: none; }
+.os-chip span { color: var(--muted); font-size: 13.5px; }
+@media (max-width: 640px) { .os-lbl { flex-basis: 100%; } .os-chip { padding: 8px 12px; font-size: 14.5px; } }
+
+/* úvod: Firmička na notebooku (obecný notebook, bez loga) */
+.laptop { --lid: #1a1d24; --deck-a: #dfe2e8; --deck-b: #b4b9c3; --deck-n: #9aa0ab; position: relative; margin-inline: 2%; }
+.laptop .lid { position: relative; background: var(--lid); border-radius: 18px 18px 8px 8px; padding: 3.4% 3.2% 3.6%;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.35), 0 30px 60px -20px rgba(20,27,46,.45); }
+.laptop .cam { position: absolute; top: 1.3%; left: 50%; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%;
+  background: #3a404c; box-shadow: inset 0 0 0 2px #2a2f38; }
+.laptop .win { border: 0; border-radius: 3px; box-shadow: none; }
+.laptop .win .bar { padding: 6px 10px; }
+.laptop .deck { position: relative; height: 16px; margin: 0 -7%; border-radius: 2px 2px 16px 16px;
+  background: linear-gradient(var(--deck-a), var(--deck-b)); box-shadow: 0 14px 24px -12px rgba(20,27,46,.5); }
+.laptop .deck::before { content: ""; position: absolute; top: 0; left: 50%; width: 16%; height: 6px; transform: translateX(-50%);
+  border-radius: 0 0 8px 8px; background: var(--deck-n); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .laptop { --lid: #0b0d12; --deck-a: #4a505c; --deck-b: #2c313a; --deck-n: #22262e; } }
+:root[data-theme="dark"] .laptop { --lid: #0b0d12; --deck-a: #4a505c; --deck-b: #2c313a; --deck-n: #22262e; }
+@media (max-width: 640px) { .laptop { margin-inline: 5%; } .laptop .lid { border-radius: 12px 12px 6px 6px; } .laptop .deck { height: 10px; margin: 0 -5%; } .laptop .cam { width: 5px; height: 5px; margin-left: -2.5px; } }
+
+/* malý notebook v pravém horním rohu snímku (běží i na Macu / MacBooku) */
+.hero-shot { position: relative; }
+.laptop.mini { position: absolute; top: -41%; right: 1.5%; width: 34%; margin: 0; z-index: 2; }
+.hero { overflow-x: clip; }
+.laptop.mini .lid { border-radius: 9px 9px 4px 4px; padding: 4% 4% 4.5%; }
+.laptop.mini .cam { width: 4px; height: 4px; margin-left: -2px; top: 1.2%; box-shadow: none; }
+.laptop.mini .win { transform: none; animation: none; border-radius: 2px; }
+.laptop.mini .deck { height: 7px; margin: 0 -7%; border-radius: 1px 1px 8px 8px; }
+.laptop.mini .deck::before { height: 3px; border-radius: 0 0 4px 4px; }
+@media (max-width: 960px) { .hero-shot { padding-top: 29%; } .laptop.mini { right: 1.5%; top: 0; } }
+@media (max-width: 640px) { .laptop.mini { width: 36%; margin: 0; top: 0; right: 1.5%; } .laptop.mini .deck { height: 5px; margin: 0 -6%; } }
+
+/* malý notebook: obrazovky programu se střídají (Přehled → Faktura → Pokladna → Docházka → Sklad) */
+.laptop.mini .slides { position: relative; aspect-ratio: 1360 / 850; }
+.laptop.mini .slides img { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; animation: slide 16s infinite; }
+.laptop.mini .slides .s1 { opacity: 1; animation-delay: 0s; }
+.laptop.mini .slides .s2 { animation-delay: 3.2s; }
+.laptop.mini .slides .s3 { animation-delay: 6.4s; }
+.laptop.mini .slides .s4 { animation-delay: 9.6s; }
+.laptop.mini .slides .s5 { animation-delay: 12.8s; }
+@keyframes slide { 0% { opacity: 0; } 4% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 100% { opacity: 0; } }
+.laptop.mini .slides .s1 { animation-name: slide1; }
+@keyframes slide1 { 0% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 96% { opacity: 0; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .laptop.mini .slides img { animation: none; opacity: 0; }
+  .laptop.mini .slides .s1 { opacity: 1; }
+}
