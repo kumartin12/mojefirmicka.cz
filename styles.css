@@ -292,8 +292,9 @@ footer .brand img { width: 24px; height: 24px; }
 @media (max-width: 640px) { .laptop.mini { width: 36%; margin: 0; top: 0; right: 1.5%; } .laptop.mini .deck { height: 5px; margin: 0 -6%; } }
 
 /* malý notebook: obrazovky programu se střídají (Přehled → Faktura → Pokladna → Docházka → Sklad) */
-.laptop.mini .slides { position: relative; aspect-ratio: 1360 / 850; }
-.laptop.mini .slides img { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; animation: slide 16s infinite; }
+.laptop.mini .slides { position: relative; height: 0; padding-top: 62.5%; }   /* 1360 × 850, i pro starší Safari */
+.laptop.mini .slides img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;
+  -webkit-animation: slide 16s infinite; animation: slide 16s infinite; }
 .laptop.mini .slides .s1 { opacity: 1; animation-delay: 0s; }
 .laptop.mini .slides .s2 { animation-delay: 3.2s; }
 .laptop.mini .slides .s3 { animation-delay: 6.4s; }
@@ -302,7 +303,4 @@ footer .brand img { width: 24px; height: 24px; }
 @keyframes slide { 0% { opacity: 0; } 4% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 100% { opacity: 0; } }
 .laptop.mini .slides .s1 { animation-name: slide1; }
 @keyframes slide1 { 0% { opacity: 1; } 20% { opacity: 1; } 24% { opacity: 0; } 96% { opacity: 0; } 100% { opacity: 1; } }
-@media (prefers-reduced-motion: reduce) {
-  .laptop.mini .slides img { animation: none; opacity: 0; }
-  .laptop.mini .slides .s1 { opacity: 1; }
-}
+/* jemné prolínání běží i při „omezit pohyb“ (není to pohyb po obrazovce) */
