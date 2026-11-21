@@ -59,4 +59,22 @@
     });
     lb.addEventListener("click", function (e) { if (e.target === lb || e.target.tagName === "BUTTON") lb.close(); });
   }
+  // po kliknutí na stažení: šipka ke stahování v prohlížeči + jak povolit nepodepsaný soubor
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[download][href*="soubory/Firmicka"]');
+    if (!a) return;
+    var old = document.getElementById("dlhint");
+    if (old) old.remove();
+    var box = document.createElement("div");
+    box.id = "dlhint"; box.className = "dlhint"; box.setAttribute("role", "status");
+    box.innerHTML = '<svg class="dlhint-arrow" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 52L52 12M24 12h28v28"/></svg>' +
+      '<div class="dlhint-card"><button type="button" class="dlhint-x" aria-label="Zavřít">×</button>' +
+      '<b>Stahování začalo – najdete ho vpravo nahoře</b>' +
+      '<p>Pokud prohlížeč napíše, že soubor <i>může být nebezpečný</i>, klikněte na ikonu stahování (šipka vpravo nahoře) a zvolte <b>Ponechat</b> nebo <b>Stáhnout podezřelý soubor</b>.</p>' +
+      '<p class="dlhint-why">Firmička je nová a zatím nemá digitální podpis, proto ji prohlížeč ještě nezná. Soubor je zkontrolovaný antivirem.</p></div>';
+    document.body.appendChild(box);
+    box.querySelector(".dlhint-x").addEventListener("click", function () { box.remove(); });
+    setTimeout(function () { if (box.parentNode) box.classList.add("dlhint-off"); }, 40000);
+    setTimeout(function () { if (box.parentNode) box.remove(); }, 40600);
+  });
 })();
