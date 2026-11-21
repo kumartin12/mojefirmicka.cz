@@ -1,5 +1,5 @@
 Firmička – sklad, faktury, pokladna a zakázky
-LICENČNÍ PODMÍNKY (verze 1.1, platné od 20. 11. 2026)
+LICENČNÍ PODMÍNKY (verze 1.2, platné od 21. 11. 2026)
 
 1. ÚVOD
 1.1 Tyto podmínky upravují užívání programu Firmička („program“) mezi
@@ -63,8 +63,13 @@ LICENČNÍ PODMÍNKY (verze 1.1, platné od 20. 11. 2026)
 7.1 Data se ukládají jen v počítači uživatele (ve Windows ve složce
     %APPDATA%\Firmicka). Autor k nim nemá přístup a nesbírá je.
 7.2 Program se připojuje k internetu jen při dotazu do registru ARES
-    (doplnění firmy podle IČO) a při odesílání e-mailů přes poštovní
-    server nastavený uživatelem. Autorovi nic neodesílá.
+    (doplnění firmy podle IČO), při odesílání e-mailů přes poštovní
+    server nastavený uživatelem, při evidenci tržeb (EET) a práci
+    s datovou schránkou, pokud je uživatel zapne, a jednou denně při
+    kontrole nové verze. Při ní program jen stáhne z webu
+    mojefirmicka.cz číslo poslední verze. Server webu přitom běžně
+    zaznamená IP adresu a verzi programu. Kontrolu lze vypnout
+    v Nastavení. Autorovi program žádná data z evidence neodesílá.
 7.3 Uživatel je správcem osobních údajů svých zákazníků, dodavatelů
     a zaměstnanců, které do programu ukládá (GDPR), a odpovídá za
     jejich zabezpečení.
