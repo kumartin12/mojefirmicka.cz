@@ -1,6 +1,6 @@
 {
- "verze": "1.13.7",
- "datum": "2026-11-24",
- "novinky": "Pokladna si pamatuje rozpracovaný nákup, zboží a práce zvlášť na zakázce, došlé zboží ve skladu červeně, export jednoho skladu.",
+ "verze": "1.13.8",
+ "datum": "2026-11-28",
+ "novinky": "Hledání ve skladu už při psaní – bez mačkání Enteru.",
  "odkaz": "https://mojefirmicka.cz/stahnout.html"
 }
